@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">ACC</div>
+        <div class="nav-items">
+            <a href="#" class="nav-link">Kelas</a>
+            <a href="#" class="nav-link">Komunikasi</a>
+        </div>
+        <a href="login.html" class="register">Belum Terdaftar!</a>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Kelas Hari ini</h2>
+            <div class="carousel" id="class-carousel">
+                <button class="carousel-control left" onclick="scrollCarousel('class-carousel', 'left')">&#10094;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="class-cards">
+                        <!-- Class cards will be dynamically inserted here by JavaScript -->
+                    </ul>
+                </div>
+                <button class="carousel-control right" onclick="scrollCarousel('class-carousel', 'right')">&#10095;</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Tugas Belum Dikumpulkan</h2>
+            <div class="carousel" id="task-carousel">
+                <button class="carousel-control left" onclick="scrollCarousel('task-carousel', 'left')">&#10094;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="task-cards">
+                        <!-- Task cards will be dynamically inserted here by JavaScript -->
+                    </ul>
+                </div>
+                <button class="carousel-control right" onclick="scrollCarousel('task-carousel', 'right')">&#10095;</button>
+            </div>
+        </div>
+    <!-- Place this right after the closing tag of the existing .container -->
+
+    </div>
+    <div class="announcement-section">
+        <h2>Announcements</h2>
+        <p>Here you can place any announcements or updates that need to be shared with the users.</p>
+        <!-- More content can be added here as needed -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

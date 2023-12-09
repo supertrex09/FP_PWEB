@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Class Platform</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="logo">ACC</a    >
+        <div class="nav-items">
+            <a href="#" class="nav-link">Kelas</a>
+            <a href="#" class="nav-link">Komunikasi</a>
+        </div>
+        <a href="login.html" class="register">Belum Terdaftar!</a>
+    </div>
+    <div class="content-area">
+      
+        <div class="login-container">
+            <h2 style="font-size: 36px;">Selamat Datang di ACC</h2>
+            <form id="loginForm" action="/login" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Nomer telepon">Nomer telepon:</label>
+                    <input type="Nomer telepon" id="Nomer telepon" name="Nomer telepon" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+            <div class="register-link">
+                belum punya akun? <a href="/register">Mulai belajar di ACC </a>.
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

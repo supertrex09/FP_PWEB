@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+body{
+    background-color: #f5f0f0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2eccd4;
+    padding: 10px;
+}
+
+.logo {
+    
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.nav-items .nav-link {
+    align-items: center;
+    font-weight: bolder;
+    font-size: 29px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.register {
+    color: red;
+    cursor: pointer;
+}
+
+.section {
+    height: 250px;
+    width: 40%;
+    background-color: rgb(255, 99, 99);
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+  
+  .container {
+    /* Existing styles... */
+    display: flex; /* Set container as flexbox */
+    justify-content: space-between; /* Spread sections horizontally */
+  }
+  
+
+.section h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.carousel {
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1; /* Ensure controls are above the cards */
+}
+
+.carousel-control.left {
+    left: 0;
+}
+
+.carousel-control.right {
+    right: 0;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.carousel-track li {
+    background: #e0e0e0;
+    margin-right: 20px;
+    height: 150px;
+    min-width: 200px; 
+    border-radius: 10px;
+}
+/* Existing styles remain unchanged */
+
+/* Styling for the new announcement section */
+.announcement-section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background for the announcement section */
+    margin-top: 20px; /* Adds some space between the carousels and the announcement section */
+    border-radius: 8px; /* Optional: Adds rounded corners to the announcement section */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.announcement-section h2 {
+    color: #333; /* Dark grey color for the heading text */
+    margin-bottom: 10px; /* Adds some space below the heading */
+}
+
+.announcement-section p {
+    color: #666; /* Medium grey color for the paragraph text */
+}

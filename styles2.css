@@ -1,0 +1,136 @@
+body::before {
+    content: "";
+    position: fixed;
+    width: 99%;
+    height: 99%;
+    z-index: -1;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbkximy15biM7-344CZrqAhJ8z83E_IlJHSc0_odGCQxqH1Leom-wE2VuS1xT0Fu-hw6TGU2HxjtoeRk0z4FF_0wHH6DXRnb_L3Ui-5EF6PFbbDqcQ4b8sK8ORv7hLGqkGVDP1y2wJ3igcP77vsCIrOMHHFWAXpNr1rHOd97FoYF4fPu_Gn8x84I8ilTSC/s844/lbb.jpg);
+    background-size: cover;
+    filter: blur(6px); /* Adjust the blur intensity */
+    opacity: 0.7; /* Adjust the opacity */
+}
+
+.navbar {
+    position: fixed;
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2eccd4;
+    padding: 10px;
+}
+
+.logo {
+        text-decoration: none; /* Remove underline on links */
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        /* Additional styles as needed */
+
+}
+
+
+.nav-items .nav-link {
+    align-items: center;
+    font-weight: bolder;
+    font-size: 29px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.register {
+    color: red;
+    cursor: pointer;
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    padding-top: 50px;
+}
+
+.image-container {
+    margin-right: 30px;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-container {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color:  #5cafc0  ;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0695c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #b5413f;
+}
+
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #b53f3f;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .content-area {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .login-container {
+        width: auto;
+        margin: 0 20px;
+    }
+}
