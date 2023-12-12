@@ -1,268 +1,153 @@
+/* Reset some default styles */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #0B0C10;
-    color: #C5C6C7;
+    font-family: Arial, sans-serif;
 }
-body{
-    background-color: #0B0C10;
-    color: #C5C6C7;
-    font-family: 'Helvetica Neue', Arial, sans-serif;}
+
+/* Global styles */
+body {
+    background-color: #f5f0f0; /* Background color for the entire page */
+}
 .navbar {
-    width: 100%;
     display: flex;
-        align-items: center;
-    background-color: #1F2833;
-    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    background-color: #605b61;
+    padding: 10px;
 }
 
+/* Logo styling */
+.logo {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
 
+/* Navigation links styling */
 .nav-items .nav-link {
     align-items: center;
     font-weight: bolder;
     font-size: 29px;
     margin: 0 10px;
     text-decoration: none;
-    color: #C5C6C7;
-    transition: color 0.3s ease-in-out;}
-    .nav-items .nav-link:hover, .register:hover {
-        color: #66FCF1;
-        transition: color 0.3s ease-in-out;
-    }
-    
-    .register {
-        color: #45A29E;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    .register:hover {
-        background-color: #191b1b;
-        padding: 0.25rem 0.5rem;
-        transition: ease-in-out;
-        border-radius: 0.2rem;
-    }
-    
+    color: #ffffff;
+}
 
-.section {
-    height: 350px;
-    width: 500px;
-    background-color: #1F2833;
+/* Register link styling */
+.register {
+    color: red;
+    cursor: pointer;
+}
+
+/* Styles for friend list and chat container */
+.container-komunikasi {
+    height: 100vh;
+    padding: 0px;
+}
+
+.friend-container {
+    width: 100%;
+    height: 270px;
+    background-color: rgb(116, 110, 110);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.friend-name{
+    border: solid 0.5px rgb(80, 74, 64);
     display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    margin: 2rem 5%;
+    width: 69%;
+    height: 100%;
+}
+.lass-chat-box{
+    background-color: #e0e0e0;
     padding: 10px;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Profile section styles */
-.profile {
-    border: 3px solid #bababa;
-    color: white;
-    padding: 20px;
-    border-radius: 0.5rem;
-    background-color: #1b2430;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-height: 6yy00px;
-    margin: 20px;
-    max-width: 1200px;
-
-}
-.profile-info {
-    display: flex;
-    align-items: center; /* Center items vertically */
-}
-#profile-cards{
-    max-height: f;
-    
-}
-
-
-
-
-
-.profile-image img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-/* Bio paragraph */
-.bio {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* Carousel controls */
-.carousel-control {
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    cursor: cell;
-    margin-top: 10px;
-}
-
-.carousel-control:hover {
-    color: #45A29E;
-}
-#carousel-profile {
-    margin-top: 20px;
-    min-width: 20px;
-    position: relative;
-    text-align: center;
-}
-.carousel-track-container {
-    overflow: hidden;
-    position: relative;
-    padding: 1rem 0;
-
-}
-
-.carousel-track {
-    list-style: decimal;
-    display: flex;
-    padding: 0;
-    transition: transform 0.5s step-end;
-}
-
-
-
-/* Menu styles */
-.menu {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.menu ul li a:hover {
-    color: #ff6b6b;
-}
-
-  
-  .container {
-    /* Existing styles... */
-    display: flex; /* Set container as flexbox */
-    justify-content: space-between; /* Spread sections horizontally */
-  }
-  
-
-.section h2 {
-    color: #66FCF1;
-}
-
-.carousel {
-    position: relative;
-    margin: 20px 0;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: #4a69bd;    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 1; /* Ensure controls are above the cards */
-}
-
-.carousel-control.left {
-    left: 0;
-}
-
-.carousel-control.right {
-    right: 0;
-}
-
-.carousel-track-container {
-    overflow: hidden;
-}
-
-.carousel-track {
-    list-style: none;
-    padding: 0;
-    margin: 10;
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-
-.carousel-track li {
-    background-color: #2B2D42;
-    margin-right: 30px;
-    margin-left: 30px;
-    height: 250px;
-    min-width: 425px; 
+    margin: 10px 0;
+    min-width:100px; /* Set a maximum width for chat boxes */
     border-radius: 10px;
-    cursor: pointer;
-    
 }
-.carousel-track#profile-cards li{
-    background-color: #2B2D42;
-    min-width: 925px;
-    }
-    .carousel-track#profile-cards li:hover{
-        background-color: #0B0C10;
-        
-        }  
-.card:hover {
-    background-color: #0B0C10;
-    color: #66FCF1;
-    transform: translateY(-10px);
-    transition: all 1.0s ease-in-out;
+.friend-container::-webkit-scrollbar {
+    display: none;
 }
-#classbutton{
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/038/060/748/large/ridho-matin-2untitled.jpg?1622056114);
-    background-position: center;
-    background-size: contain;
-    }
-.text-center {
+
+.friend-box img {
+    margin-left: 11%;
+    align-self: center;
+    width: 80%; /* Adjust the width of the image */
+    height: 80%; /* Adjust the height of the image */
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+}
+.friend-box p {
+    font-size: 20px;
+    align-self: center;
     text-align: center;
 }
-.button, .carousel-control, .menu ul li a {
-    color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
+.friend-box {
+    background-color: #ededed;
+    display: inline-block;
+    width: 270px;
+    min-height: 250px;
+    margin: 5px;
+    border:  solid #5e5656;
+    border-radius:10%;
+}
+#frbox {
+    margin-left: 20px;
+    height: 328px;
+}
+#friend-name1{
+    width: 30%;
+}
+.chat-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 10px 0;
+    min-width:100%; /* Set a maximum width for chat boxes */
+    border-radius: 10px;
 }
 
+/* Sender's chat box */
+.chat-box.sent {
+    background-color: #2eccd4; /* Change background color for sender's chat box */
+    color: white; /* Change text color for sender's chat box */
+}
 
+/* Message timestamp */
+.chat-box p:first-child {
+    margin: 10px;
+    font-size: 12px;
+    color: #3a2b2b;
+}
 
+/* Message text */
+.chat-box p:last-child {
+    font-size: 16px;
+}
 
-.announcement-section {
-    background-color: #2B2D42;
-    color: #C5C6C7;
-    padding: 1rem;
-    margin: 2rem 5%;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+/* Styles for message input form */
+.message-form {
+    margin-top: 10px; /* Add some space between chat and message input */
+}
 
+/* Styles for message text input */
+.message-text {
+    height: 50px;
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-radius: 25px; /* Make the input field rounded */
+}
 
-
-.announcement-section p {
-    color: #66FCF1;
+/* Styles for message submit button */
+.message-submit {
+    height: 50px;
+    width: 80px; /* Set a fixed width for the submit button */
+    border: 1px solid #2eccd4;
+    background-color: #2eccd4;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px; /* Make the button rounded */
+    cursor: pointer;
 }

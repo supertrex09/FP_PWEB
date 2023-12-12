@@ -1,0 +1,277 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #C5C6C7;
+    background: linear-gradient(to bottom, #ffffff, #5d5b5e);
+    
+    background-size: 100%;
+    backdrop-filter: blur(10px); /* Apply a backdrop blur effect */
+    filter: blur(1); 
+}
+.upperback {
+    background-size: cover  ;
+    background-position: left;
+}
+body{
+    
+    color: #C5C6C7;
+    font-family: 'Helvetica Neue', Arial, sans-serif;}
+.navbar {
+    width: 97.2%;
+    height: 70px;
+    display: flex;
+     align-items: center;
+     background-color: #2e2a2f;
+     padding: 0.5rem 1rem;
+    margin-bottom: 0px;
+}
+
+#profile-carousel{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-items .nav-link {
+    align-items: center;
+    font-weight: bolder;
+    font-size: 29px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;}
+    .nav-items .nav-link:hover, .register:hover {
+        color: #ca7bff;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .register {
+        color: #45A29E;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .register:hover {
+        background-color: #191b1b;
+        border-radius: 0.2rem;
+    }
+    
+
+.section {
+    margin: 20px;
+    height: 350px;
+    width: 500px;
+    background-color: #2e2a2f97;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(59, 59, 60, 0.358);
+}
+
+
+/* Carousel controls */
+.carousel-control {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: cell;
+    margin-top: 10px;
+}
+
+.carousel-control:hover {
+    color: #d4eae9;
+}
+#carousel-profile {
+    margin-top: 20px;
+    min-width: 20px;
+    position: relative;
+    text-align: center;
+}
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+
+}
+
+.carousel-track {
+    list-style: decimal;
+    display: flex;
+    padding: 0;
+    transition: transform 0.5s step-end;
+}
+
+
+
+
+
+  
+  .container {
+    margin: 0px;
+    display: flex; /* Set container as flexbox */
+    justify-content: space-between; /* Spread sections horizontally */
+  }
+  
+
+.section h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.carousel {
+    background-image: none;
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #4a69bd;    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1; /* Ensure controls are above the cards */
+}
+
+.carousel-control.left {
+    left: 0;
+}
+
+.carousel-control.right {
+    right: 0;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+}
+
+.carousel-track {
+    list-style: none;
+    padding: 0;
+    margin: 10;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.carousel-track li {
+    align-self: center;
+    background-color: #2B2D42;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 200px;
+    min-width: 100%; 
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: none
+}
+#profile-cards li{
+    border-radius: 0%;
+    background-color: #a7aac3;
+    min-width: none;
+    max-width: none;
+    width: 250px;
+    height: 500px;
+    margin: 0px;
+    }
+    .carousel-track#profile-cards li:hover{
+        background-color: #0B0C10;
+        
+        }  
+.card:hover {
+    background-color: #0B0C10;
+    color: #66FCF1;
+    transform: translateY(-10px);
+}
+#classbutton{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/038/060/748/large/ridho-matin-2untitled.jpg?1622056114);
+    background-position: center;
+    background-size: contain;
+    }
+.text-center {
+    text-align: center;
+}
+.button, .carousel-control, .menu ul li a {
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+.announcement-section {
+    background-color: #00000088;
+    color: #C5C6C7;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 97.4%;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+
+
+
+.announcement-section p {
+    color: #ffffff;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.card button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative; /* Add this */
+}
+
+.card .class-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 12, 16, 0.7); /* Semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    color: #060606;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+}
+
+.card:hover .class-button {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.card p {
+    margin: 20px;
+    color: #fff; /* Text color on the overlay */
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 64px;
+    color: #ffffff; /* Title color on the overlay */
+}
+.goo {
+    margin-bottom: 2000px;
+}
+#class-cards{
+    width: 85%;
+}
+#task-cards{
+    width: 85%;
+}

@@ -1,0 +1,60 @@
+<div class="class-description">
+<h1>Class Name</h1>
+<div class="teacher">
+    <img src="default-profile.jpg" alt="Teacher Photo">
+    <p>Rully Soelaiman</p>
+</div>
+<div class="assistant">
+    <img src="default-profile.jpg" alt="Assistant Photo">
+    <p>Faudzan Dzikri Rabbani</p>
+</div>
+</div>
+
+<!-- Second Container: Class Material and Assignments -->
+<div class="class-content">
+<div class="container">
+    <h2>Class Material</h2>
+    <div class="material-box">
+        <!-- Material 1 -->
+        <div class="material">
+            <h3>Material 1</h3>
+            <p>Description of Material 1</p>
+        </div>
+        <!-- Material 2 -->
+        <div class="material">
+            <h3>Material 2</h3>
+            <p>Description of Material 2</p>
+        </div>
+        <!-- Add more materials here -->
+    </div>
+</div>
+
+<div class="container">
+    <h2>Assignments</h2>
+    <div class="assignment-box">
+    <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+        <div class="assignment-box">
+            <h2>task 1</h2>
+        </div>
+    </button></li>
+</button></li>
+<li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+    <div class="assignment-box">
+        <h2>task 2</h2>
+    </div>
+</button></li>   
+</button></li>
+<li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+<div class="assignment-box">
+    <h2>task 3</h2>
+</div>
+</button></li>   
+</button></li>
+<li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+<div class="assignment-box">
+<h2>task 4</h2>
+</div>
+</button></li> 
+    </div>
+</div>
+</div>

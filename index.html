@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles4.css">
 </head>
 
 <body>
+    <div class="upperback">
+
     <div class="navbar">
         <div class="row">
             <div class="col">
@@ -19,63 +21,48 @@
         </div>
         <div class="col" style="color: whitesmoke; padding: 0px; margin: 0;">
             <div class="row">
-                <h1 style="font-family: 'Inter', sans-serif; margin-right: 250px;">ACC</h1>
+                <h1 style="font-family: 'Inter', sans-serif; margin: 0px;  margin-right: 250px;">ACC</h1>
             </div>
             <div class="row">
                 <h6 style="font-family: 'Inter', sans-serif; font-size: 10px; margin: 0;">Aktual Cendikia Course</h6>
             </div>
         </div>
-        <div class="nav-items">
-            <a href="#" class="nav-link">Kelas</a>
-            <a href="#" class="nav-link">Komunikasi</a>
-        </div>
-        <div class="row" style="margin-left: 300px;">
+        
+        <div class="row" style="margin-left: 590px;">
             <div class="col-6 text-center">
-                <img src="default-profile.jpg" width="65px" height="65px" style="border: white; border-radius: 50%;">
+                <img src="default-profile.jpg" width="45px" height="45px" style="border: white; border-radius: 50%;">
             </div>
             <div class="col-6 text-center">
                 <a href="login.html" class="register">Belum Terdaftar!</a>
             </div>
         </div>
     </div>
-    
-    
-
-    <div class="profile">
-        <h2>Welcome Back, Gustavo_Fring</h2>
-        <div>
-            <div class="profile-info">
-                <div class="profile-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/6/69/Gustavo_Fring_BCS_S3E10.png" alt="Profile Image">
-                </div>
-                <p class="bio">
-                    Welcome to my e-learning profile! I'm passionate about lifelong learning and enjoy exploring various subjects. From programming to arts and literature, I find joy in acquiring new knowledge.
-                </p>
-            </div>
-        </div>
-      
-        <div class="carousel" id="profile-carousel">
-            <button class="carousel-control left" onclick="scrollCarousel('profile-carousel', 'left')">&#10094;</button>
-            <div class="carousel-track-container">
-                <ul class="carousel-track" id="profile-cards">
-                    <li class="card"><a href="#">Class 1</a></li>
-                    <li class="card"><a href="#">Class 2</a></li>
-                    <li class="card"><a href="#">Class 3</a></li>
-                    <!-- Add more class cards as needed -->
-                </ul>
-                
-            </div>
-            <button class="carousel-control right" onclick="scrollCarousel('profile-carousel', 'right')">&#10095;</button>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Browse Courses</a></li>
-                <li><a href="#">My Progress</a></li>
-                <li><a href="#">Certificates</a></li>
+    <div class="carousel" id="profile-carousel">
+        <button class="carousel-control left" onclick="scrollCarousel('profile-carousel', 'left')">&#10094;</button>
+        <div class="carousel-track-container">
+            <ul class="carousel-track" id="profile-cards">
+                <li class="card">
+                    <button onclick="window.location.href='class.html';" style="background-image: url(https://www.signupgenius.com/cms/images/50-Classroom-Activities-for-the-First-Day-of-School-1260x630.png);">
+                        <div class="class-button">
+                            <h2>Classroom</h2>
+                            <p>iting entry point for users to explore and learn more about the class and its curriculum.</p>
+                        </div>
+                    </button>
+                </li>
+                <li class="card">
+                    <button onclick="window.location.href='Komunikasi.html';" style="background-image: url(https://i0.wp.com/www.additudemag.com/wp-content/uploads/2019/06/adult-adhd-adhd-in-adults-GettyImages-1199696848.jpg?resize=1280%2C720px&ssl=1);">
+                        <div class="class-button">
+                            <h2>Communication</h2>
+                            <p>iting entry point for users to explore and learn more about the class and its curriculum.</p>
+                        </div>
+                    </button>
+                </li>
             </ul>
         </div>
+        <button class="carousel-control right" onclick="scrollCarousel('profile-carousel', 'right')">&#10095;</button>
     </div>
-
+    </div> 
+<div class="lower">
     <div class="container">
         <div class="section">
             <h2>Kelas Hari ini</h2>
@@ -83,10 +70,32 @@
                 <button class="carousel-control left" onclick="scrollCarousel('class-carousel', 'left')">&#10094;</button>
                 <div class="carousel-track-container">
                     <ul class="carousel-track" id="class-cards">
-                        <li class="card"><a href="#">Class 1</a></li>
-                        <li class="card"><a href="#">Class 2</a></li>
-                        <li class="card"><a href="#">Class 3</a></li>
-                        <!-- Add more class cards as needed -->
+                        <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/blogs/how-to-be-good-at-math.jpg); background-size: contain;">
+                            <div class="class-button">
+                                <h2>Mathematics</h2>
+                            </div>
+                        </button></li>
+                        <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://cas.stthomas.edu/_media-library/_images/history/1920x1080/stthomas-history-time.jpg); background-size: contain;">
+                            <div class="class-button">
+                                <h2>History</h2>
+                            </div>
+                        </button></li>
+                        <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://e0.pxfuel.com/wallpapers/896/129/desktop-wallpaper-albert-einstein-theory-of-relativity-physics-german-thinker-theoretical-physicist-genius.jpg); background-size: 100%;">
+                            <div class="class-button">
+                                <h2>Pyshics</h2>
+                            </div>
+                        </button></li>
+                        <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://www.openaccessgovernment.org/wp-content/uploads/2019/04/dreamstime_s_126032651.jpg); background-size: contain;">
+                            <div class="class-button">
+                                <h2>Chemistry</h2>
+                            </div>
+                        </button></li>
+                        <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/computer-coding.jpg); background-size: contain;">
+                            <div class="class-button">
+                                <h2>Programming</h2>
+                            </div>
+                        </button></li>
+
                     </ul>
                     
                 </div>
@@ -99,10 +108,30 @@
                 <button class="carousel-control left" onclick="scrollCarousel('task-carousel', 'left')">&#10094;</button>
                 <div class="carousel-track-container">
                     <ul class="carousel-track" id="task-cards">
-                        <li class="card"><a href="#">Class 1</a></li>
-                        <li class="card"><a href="#">Class 2</a></li>
-                        <li class="card"><a href="#">Class 3</a></li>
-                        <!-- Add more class cards as needed -->
+                    </button></li>
+                    <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+                        <div class="class-button">
+                            <h2>task 1</h2>
+                        </div>
+                    </button></li>
+                </button></li>
+                <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+                    <div class="class-button">
+                        <h2>task 2</h2>
+                    </div>
+                </button></li>   
+            </button></li>
+            <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+                <div class="class-button">
+                    <h2>task 3</h2>
+                </div>
+            </button></li>   
+        </button></li>
+        <li class="card"><button onclick="window.location.href='class.html';" style="background-image: url(https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6XgheC4PDL8GGnAAVYJ2ab/01c613d21fe5b79bf7311c68456af2e2/iStock-926151548.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=); background-size: contain;">
+            <div class="class-button">
+                <h2>task 4</h2>
+            </div>
+        </button></li>                    
                     </ul>
                     
                 </div>
