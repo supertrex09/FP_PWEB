@@ -1,18 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Example data for classes and tasks
-    const classes = [
-        { subject: 'Mathematics', time: '10:00 AM' },
-        { subject: 'History', time: '12:00 PM' },
-        { subject: 'Science', time: '2:00 PM' }
-    ];
-
-    const tasks = [
-        { name: 'Math Homework', due: 'Due Tomorrow' },
-        { name: 'History Essay', due: 'Due Next Monday' },
-        { name: 'Science Project', due: 'Due Next Wednesday' }
-    ];
-
-    // Function to create and append the cards
     function createCards(dataArray, containerId) {
         const container = document.getElementById(containerId);
         dataArray.forEach(item => {
@@ -21,32 +7,64 @@ document.addEventListener('DOMContentLoaded', function() {
             container.appendChild(li);
         });
     }
-
-    // Populate the carousels with data
-    createCards(classes, 'class-cards');
-    createCards(tasks, 'task-cards');
-
-    window.scrollCarousel = function(carouselId, direction) {
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'scale(1.05)';
+        });
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)';
+        });
+    });
+    function scrollCarousel(carouselId, direction) {
         const carousel = document.getElementById(carouselId);
         const track = carousel.querySelector('.carousel-track');
-        const cardSize = track.querySelector('li').clientWidth;
-        
-        // Get the current transform value, or default to 0 if none set yet
-        const currentTransform = track.style.transform ? parseInt(track.style.transform.match(/-?\d+/)[0]) : 0;
-        
-        const numCardsVisible = Math.floor(track.clientWidth / cardSize);
-        let scrollAmount = direction === 'right' ? currentTransform - (cardSize * numCardsVisible) : currentTransform + (cardSize * numCardsVisible);
-        
-        // Ensure that the track doesn't go out of bounds
+        const card = track.querySelector('li');
+
+        const cardSize =
+            card.clientWidth +
+            parseInt(window.getComputedStyle(card).marginRight) +
+            parseInt(window.getComputedStyle(card).marginLeft); // Width of one card including margins
+
+        let currentTransform = track.style.transform
+            ? parseInt(track.style.transform.match(/-?\d+/)[0])
+            : 0;
         const maxScroll = 0;
         const minScroll = -(track.scrollWidth - track.clientWidth);
-        if (scrollAmount > maxScroll) {
-            scrollAmount = maxScroll;
-        } else if (scrollAmount < minScroll) {
-            scrollAmount = minScroll;
-        }
-        
+
+        let scrollAmount =
+            direction === 'right'
+                ? currentTransform - cardSize
+                : currentTransform + cardSize;
+        scrollAmount = Math.max(minScroll, Math.min(maxScroll, scrollAmount)); // Ensure scroll remains within bounds
+
         track.style.transform = `translateX(${scrollAmount}px)`;
-    };
+    }
+
+    // Populate the carousels with data
+    const classes = [
+      
+    ];
+
+    const tasks = [
     
+    ];
+
+    const profileCourses = [
+        
+    ];
+
+    createCards(classes, 'class-cards');
+    createCards(tasks, 'task-cards');
+    createCards(profileCourses, 'profile-cards');
+
+    // Attach event listeners to buttons
+    const allCarouselControls = document.querySelectorAll('.carousel-control');
+
+    allCarouselControls.forEach(button => {
+        button.addEventListener('click', function() {
+            const carouselId = this.parentElement.id;
+            const direction = this.classList.contains('left') ? 'left' : 'right';
+            scrollCarousel(carouselId, direction);
+        });
+    });
 });
